@@ -17,10 +17,15 @@ class eReaderFolioReaderContainer: FolioReaderContainer {
   
   func setupBook(_ book : Book?){
     let config = FolioReaderConfig()
-    config.scrollDirection = .horizontalWithVerticalContent
+    config.scrollDirection = .vertical
     
-    guard let bookPath = book?.filePathDirectory() else { return }
+    
+    guard let bookPath = book?.filePathDirectory else { return }
     setupConfig(config, epubPath: bookPath)
+  }
+  
+  func changeFontSize(_ size : FolioReaderFontSize){
+    self.folioReader.currentFontSize = size
   }
   
 }

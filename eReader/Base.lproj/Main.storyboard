@@ -82,16 +82,59 @@
                                     <segue destination="eQz-0f-YYe" kind="embed" id="Fjp-2d-GSO"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyy-eK-RZM">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="OPC-cZ-LVO">
+                                        <rect key="frame" x="48" y="15" width="318" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MBI-7y-zJB"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="Ols-i8-smS" eventType="valueChanged" id="BI3-51-f38"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Mi-cwl">
+                                        <rect key="frame" x="373.5" y="14.5" width="30.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maa-yz-ICO">
+                                        <rect key="frame" x="16" y="21.5" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="maa-yz-ICO" firstAttribute="centerY" secondItem="vyy-eK-RZM" secondAttribute="centerY" id="DR9-c0-4Sz"/>
+                                    <constraint firstItem="cS2-Mi-cwl" firstAttribute="centerY" secondItem="vyy-eK-RZM" secondAttribute="centerY" id="MnD-R3-0b5"/>
+                                    <constraint firstAttribute="trailing" secondItem="OPC-cZ-LVO" secondAttribute="trailing" constant="50" id="a0d-Qc-FHw"/>
+                                    <constraint firstItem="OPC-cZ-LVO" firstAttribute="centerY" secondItem="vyy-eK-RZM" secondAttribute="centerY" id="bx6-Qw-JGA"/>
+                                    <constraint firstItem="maa-yz-ICO" firstAttribute="leading" secondItem="vyy-eK-RZM" secondAttribute="leading" constant="16" id="cd2-YM-I4v"/>
+                                    <constraint firstAttribute="height" constant="60" id="fK7-yU-a5Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="cS2-Mi-cwl" secondAttribute="trailing" constant="10" id="jMl-pl-wL0"/>
+                                    <constraint firstItem="OPC-cZ-LVO" firstAttribute="leading" secondItem="vyy-eK-RZM" secondAttribute="leading" constant="50" id="nRv-Fa-QF7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wga-gn-TVX" firstAttribute="bottom" secondItem="vyy-eK-RZM" secondAttribute="bottom" id="48x-gy-VU6"/>
+                            <constraint firstItem="vyy-eK-RZM" firstAttribute="top" secondItem="4JT-5O-B00" secondAttribute="bottom" id="NIy-tn-rhL"/>
                             <constraint firstItem="4JT-5O-B00" firstAttribute="leading" secondItem="Wga-gn-TVX" secondAttribute="leading" id="Pnx-81-0Jf"/>
-                            <constraint firstItem="Wga-gn-TVX" firstAttribute="bottom" secondItem="4JT-5O-B00" secondAttribute="bottom" constant="60" id="Wtw-9p-Uqi"/>
+                            <constraint firstItem="vyy-eK-RZM" firstAttribute="leading" secondItem="Wga-gn-TVX" secondAttribute="leading" id="WoC-CN-pvT"/>
+                            <constraint firstItem="Wga-gn-TVX" firstAttribute="trailing" secondItem="vyy-eK-RZM" secondAttribute="trailing" id="doN-7a-RXX"/>
                             <constraint firstItem="4JT-5O-B00" firstAttribute="top" secondItem="Wga-gn-TVX" secondAttribute="top" id="foO-7c-OAc"/>
                             <constraint firstItem="Wga-gn-TVX" firstAttribute="trailing" secondItem="4JT-5O-B00" secondAttribute="trailing" id="nOf-Fk-qVA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wga-gn-TVX"/>
                     </view>
+                    <connections>
+                        <outlet property="sliderView" destination="OPC-cZ-LVO" id="wn7-Xf-b89"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fz6-fE-YoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

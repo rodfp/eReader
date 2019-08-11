@@ -14,7 +14,7 @@ enum Book : String {
   case hamlet = "Hamlet, Prince of Denmark"
   case macbeth = "Macbeth"
   
-  func filePathDirectory() -> String?{
+  var filePathDirectory : String?{
     let filePath = Bundle.main.path(forResource: self.rawValue, ofType: "epub")
     return filePath
   }
