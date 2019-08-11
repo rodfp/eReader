@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BF98F592300999200F9BF4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F582300999200F9BF4C /* AppDelegate.m */; };
+		5BF98F5F2300999200F9BF4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F5D2300999200F9BF4C /* Main.storyboard */; };
+		5BF98F612300999300F9BF4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F602300999300F9BF4C /* Assets.xcassets */; };
+		5BF98F642300999300F9BF4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F622300999300F9BF4C /* LaunchScreen.storyboard */; };
+		5BF98F672300999300F9BF4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F662300999300F9BF4C /* main.m */; };
+		5BF98F6F230099BC00F9BF4C /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */; };
+		5BF98F7623009E1C00F9BF4C /* MuchAdo.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */; };
+		5BF98F7723009E1C00F9BF4C /* AllWell.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7223009E1C00F9BF4C /* AllWell.epub */; };
+		5BF98F7823009E1C00F9BF4C /* VeniceMerchant.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */; };
+		5BF98F7923009E1C00F9BF4C /* Hamlet.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7423009E1C00F9BF4C /* Hamlet.epub */; };
+		5BF98F7A23009E1C00F9BF4C /* Macbeth.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7523009E1C00F9BF4C /* Macbeth.epub */; };
+		DA6F3E160F0856D03E05CB19 /* Pods_eReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B74D516C8AF46737E4891 /* Pods_eReader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		396B74D516C8AF46737E4891 /* Pods_eReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF98F542300999200F9BF4C /* eReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF98F572300999200F9BF4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BF98F582300999200F9BF4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5BF98F5E2300999200F9BF4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BF98F602300999300F9BF4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF98F632300999300F9BF4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BF98F652300999300F9BF4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF98F662300999300F9BF4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BF98F6D230099BC00F9BF4C /* eReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eReader-Bridging-Header.h"; sourceTree = "<group>"; };
+		5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuchAdo.epub; sourceTree = "<group>"; };
+		5BF98F7223009E1C00F9BF4C /* AllWell.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllWell.epub; sourceTree = "<group>"; };
+		5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = VeniceMerchant.epub; sourceTree = "<group>"; };
+		5BF98F7423009E1C00F9BF4C /* Hamlet.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamlet.epub; sourceTree = "<group>"; };
+		5BF98F7523009E1C00F9BF4C /* Macbeth.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Macbeth.epub; sourceTree = "<group>"; };
+		6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.release.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.release.xcconfig"; sourceTree = "<group>"; };
+		9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.debug.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF98F512300999200F9BF4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6F3E160F0856D03E05CB19 /* Pods_eReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57C661158AD31CC85C166254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */,
+				6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BF98F4B2300999200F9BF4C = {
+			isa = PBXGroup;
+			children = (
+				5BF98F562300999200F9BF4C /* eReader */,
+				5BF98F552300999200F9BF4C /* Products */,
+				57C661158AD31CC85C166254 /* Pods */,
+				806489FE8FC2C251C732BFF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BF98F552300999200F9BF4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F542300999200F9BF4C /* eReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF98F562300999200F9BF4C /* eReader */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F7023009E1C00F9BF4C /* Books */,
+				5BF98F572300999200F9BF4C /* AppDelegate.h */,
+				5BF98F582300999200F9BF4C /* AppDelegate.m */,
+				5BF98F5D2300999200F9BF4C /* Main.storyboard */,
+				5BF98F602300999300F9BF4C /* Assets.xcassets */,
+				5BF98F622300999300F9BF4C /* LaunchScreen.storyboard */,
+				5BF98F652300999300F9BF4C /* Info.plist */,
+				5BF98F662300999300F9BF4C /* main.m */,
+				5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */,
+				5BF98F6D230099BC00F9BF4C /* eReader-Bridging-Header.h */,
+			);
+			path = eReader;
+			sourceTree = "<group>";
+		};
+		5BF98F7023009E1C00F9BF4C /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */,
+				5BF98F7223009E1C00F9BF4C /* AllWell.epub */,
+				5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */,
+				5BF98F7423009E1C00F9BF4C /* Hamlet.epub */,
+				5BF98F7523009E1C00F9BF4C /* Macbeth.epub */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		806489FE8FC2C251C732BFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				396B74D516C8AF46737E4891 /* Pods_eReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF98F532300999200F9BF4C /* eReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF98F6A2300999300F9BF4C /* Build configuration list for PBXNativeTarget "eReader" */;
+			buildPhases = (
+				2F3CC7B77AA90E24B4E59654 /* [CP] Check Pods Manifest.lock */,
+				5BF98F502300999200F9BF4C /* Sources */,
+				5BF98F512300999200F9BF4C /* Frameworks */,
+				5BF98F522300999200F9BF4C /* Resources */,
+				C969EDB9B25E27774496A6F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eReader;
+			productName = eReader;
+			productReference = 5BF98F542300999200F9BF4C /* eReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF98F4C2300999200F9BF4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				TargetAttributes = {
+					5BF98F532300999200F9BF4C = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 5BF98F4F2300999200F9BF4C /* Build configuration list for PBXProject "eReader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BF98F4B2300999200F9BF4C;
+			productRefGroup = 5BF98F552300999200F9BF4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF98F532300999200F9BF4C /* eReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BF98F522300999200F9BF4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF98F642300999300F9BF4C /* LaunchScreen.storyboard in Resources */,
+				5BF98F7823009E1C00F9BF4C /* VeniceMerchant.epub in Resources */,
+				5BF98F7A23009E1C00F9BF4C /* Macbeth.epub in Resources */,
+				5BF98F612300999300F9BF4C /* Assets.xcassets in Resources */,
+				5BF98F5F2300999200F9BF4C /* Main.storyboard in Resources */,
+				5BF98F7623009E1C00F9BF4C /* MuchAdo.epub in Resources */,
+				5BF98F7923009E1C00F9BF4C /* Hamlet.epub in Resources */,
+				5BF98F7723009E1C00F9BF4C /* AllWell.epub in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F3CC7B77AA90E24B4E59654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C969EDB9B25E27774496A6F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eReader/Pods-eReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eReader/Pods-eReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eReader/Pods-eReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF98F502300999200F9BF4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF98F6F230099BC00F9BF4C /* BookListViewController.swift in Sources */,
+				5BF98F672300999300F9BF4C /* main.m in Sources */,
+				5BF98F592300999200F9BF4C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BF98F5D2300999200F9BF4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF98F5E2300999200F9BF4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BF98F622300999300F9BF4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF98F632300999300F9BF4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BF98F682300999300F9BF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5BF98F692300999300F9BF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BF98F6B2300999300F9BF4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C8438QZM;
+				INFOPLIST_FILE = eReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.eReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eReader/eReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF98F6C2300999300F9BF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C8438QZM;
+				INFOPLIST_FILE = eReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.eReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eReader/eReader-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF98F4F2300999200F9BF4C /* Build configuration list for PBXProject "eReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF98F682300999300F9BF4C /* Debug */,
+				5BF98F692300999300F9BF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF98F6A2300999300F9BF4C /* Build configuration list for PBXNativeTarget "eReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF98F6B2300999300F9BF4C /* Debug */,
+				5BF98F6C2300999300F9BF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF98F4C2300999200F9BF4C /* Project object */;
+}
