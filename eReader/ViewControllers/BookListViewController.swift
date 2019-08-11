@@ -31,6 +31,7 @@ extension BookListViewController : UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let books = Book.allValues()
+    MixpanelHelper.userStartedReadingBook(books[indexPath.row])
     self.performSegue(withIdentifier: "bookDetail", sender: books[indexPath.row])
   }
   

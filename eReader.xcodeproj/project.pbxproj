@@ -22,6 +22,7 @@
 		5BF98F7E2300A56F00F9BF4C /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F7D2300A56F00F9BF4C /* BookDetailViewController.swift */; };
 		5BF98F802300A81D00F9BF4C /* eReaderFolioReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */; };
 		5BF98F822300AA0500F9BF4C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F812300AA0500F9BF4C /* Book.swift */; };
+		5BF98F882300B39E00F9BF4C /* MixpanelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F872300B39E00F9BF4C /* MixpanelHelper.swift */; };
 		DA6F3E160F0856D03E05CB19 /* Pods_eReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B74D516C8AF46737E4891 /* Pods_eReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		5BF98F7D2300A56F00F9BF4C /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eReaderFolioReaderContainer.swift; sourceTree = "<group>"; };
 		5BF98F812300AA0500F9BF4C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5BF98F872300B39E00F9BF4C /* MixpanelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelHelper.swift; sourceTree = "<group>"; };
 		6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.release.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.release.xcconfig"; sourceTree = "<group>"; };
 		9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.debug.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 		5BF98F562300999200F9BF4C /* eReader */ = {
 			isa = PBXGroup;
 			children = (
+				5BF98F862300B39000F9BF4C /* Managers */,
 				5BF98F832300B0F200F9BF4C /* Model */,
 				5BF98F852300B11700F9BF4C /* ViewControllers */,
 				5BF98F842300B0FD00F9BF4C /* Views */,
@@ -144,6 +147,14 @@
 				5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BF98F862300B39000F9BF4C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F872300B39E00F9BF4C /* MixpanelHelper.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		806489FE8FC2C251C732BFF2 /* Frameworks */ = {
@@ -278,6 +289,7 @@
 				5BF98F822300AA0500F9BF4C /* Book.swift in Sources */,
 				5BF98F672300999300F9BF4C /* main.m in Sources */,
 				5BF98F802300A81D00F9BF4C /* eReaderFolioReaderContainer.swift in Sources */,
+				5BF98F882300B39E00F9BF4C /* MixpanelHelper.swift in Sources */,
 				5BF98F592300999200F9BF4C /* AppDelegate.m in Sources */,
 				5BF98F7E2300A56F00F9BF4C /* BookDetailViewController.swift in Sources */,
 			);
