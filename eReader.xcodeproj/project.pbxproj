@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,11 +13,15 @@
 		5BF98F642300999300F9BF4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F622300999300F9BF4C /* LaunchScreen.storyboard */; };
 		5BF98F672300999300F9BF4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F662300999300F9BF4C /* main.m */; };
 		5BF98F6F230099BC00F9BF4C /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */; };
-		5BF98F7623009E1C00F9BF4C /* MuchAdo.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */; };
-		5BF98F7723009E1C00F9BF4C /* AllWell.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7223009E1C00F9BF4C /* AllWell.epub */; };
-		5BF98F7823009E1C00F9BF4C /* VeniceMerchant.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */; };
-		5BF98F7923009E1C00F9BF4C /* Hamlet.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7423009E1C00F9BF4C /* Hamlet.epub */; };
+		5BF98F7623009E1C00F9BF4C /* Much Ado About Nothing.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7123009E1C00F9BF4C /* Much Ado About Nothing.epub */; };
+		5BF98F7723009E1C00F9BF4C /* All's Well That Ends Well.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7223009E1C00F9BF4C /* All's Well That Ends Well.epub */; };
+		5BF98F7823009E1C00F9BF4C /* The Merchant of Venice.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7323009E1C00F9BF4C /* The Merchant of Venice.epub */; };
+		5BF98F7923009E1C00F9BF4C /* Hamlet, Prince of Denmark.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7423009E1C00F9BF4C /* Hamlet, Prince of Denmark.epub */; };
 		5BF98F7A23009E1C00F9BF4C /* Macbeth.epub in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98F7523009E1C00F9BF4C /* Macbeth.epub */; };
+		5BF98F7C2300A03F00F9BF4C /* BookNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F7B2300A03F00F9BF4C /* BookNameCell.swift */; };
+		5BF98F7E2300A56F00F9BF4C /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F7D2300A56F00F9BF4C /* BookDetailViewController.swift */; };
+		5BF98F802300A81D00F9BF4C /* eReaderFolioReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */; };
+		5BF98F822300AA0500F9BF4C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98F812300AA0500F9BF4C /* Book.swift */; };
 		DA6F3E160F0856D03E05CB19 /* Pods_eReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B74D516C8AF46737E4891 /* Pods_eReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,11 +37,15 @@
 		5BF98F662300999300F9BF4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BF98F6D230099BC00F9BF4C /* eReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eReader-Bridging-Header.h"; sourceTree = "<group>"; };
 		5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
-		5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = MuchAdo.epub; sourceTree = "<group>"; };
-		5BF98F7223009E1C00F9BF4C /* AllWell.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllWell.epub; sourceTree = "<group>"; };
-		5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = VeniceMerchant.epub; sourceTree = "<group>"; };
-		5BF98F7423009E1C00F9BF4C /* Hamlet.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamlet.epub; sourceTree = "<group>"; };
+		5BF98F7123009E1C00F9BF4C /* Much Ado About Nothing.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Much Ado About Nothing.epub"; sourceTree = "<group>"; };
+		5BF98F7223009E1C00F9BF4C /* All's Well That Ends Well.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "All's Well That Ends Well.epub"; sourceTree = "<group>"; };
+		5BF98F7323009E1C00F9BF4C /* The Merchant of Venice.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Merchant of Venice.epub"; sourceTree = "<group>"; };
+		5BF98F7423009E1C00F9BF4C /* Hamlet, Prince of Denmark.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hamlet, Prince of Denmark.epub"; sourceTree = "<group>"; };
 		5BF98F7523009E1C00F9BF4C /* Macbeth.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Macbeth.epub; sourceTree = "<group>"; };
+		5BF98F7B2300A03F00F9BF4C /* BookNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNameCell.swift; sourceTree = "<group>"; };
+		5BF98F7D2300A56F00F9BF4C /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eReaderFolioReaderContainer.swift; sourceTree = "<group>"; };
+		5BF98F812300AA0500F9BF4C /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.release.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.release.xcconfig"; sourceTree = "<group>"; };
 		9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eReader.debug.xcconfig"; path = "Target Support Files/Pods-eReader/Pods-eReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +68,6 @@
 				9B9D6964332FBBFF9AB58236 /* Pods-eReader.debug.xcconfig */,
 				6513C089CDDC2CD965BB19E8 /* Pods-eReader.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,9 @@
 		5BF98F562300999200F9BF4C /* eReader */ = {
 			isa = PBXGroup;
 			children = (
+				5BF98F832300B0F200F9BF4C /* Model */,
+				5BF98F852300B11700F9BF4C /* ViewControllers */,
+				5BF98F842300B0FD00F9BF4C /* Views */,
 				5BF98F7023009E1C00F9BF4C /* Books */,
 				5BF98F572300999200F9BF4C /* AppDelegate.h */,
 				5BF98F582300999200F9BF4C /* AppDelegate.m */,
@@ -93,7 +103,6 @@
 				5BF98F622300999300F9BF4C /* LaunchScreen.storyboard */,
 				5BF98F652300999300F9BF4C /* Info.plist */,
 				5BF98F662300999300F9BF4C /* main.m */,
-				5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */,
 				5BF98F6D230099BC00F9BF4C /* eReader-Bridging-Header.h */,
 			);
 			path = eReader;
@@ -102,13 +111,39 @@
 		5BF98F7023009E1C00F9BF4C /* Books */ = {
 			isa = PBXGroup;
 			children = (
-				5BF98F7123009E1C00F9BF4C /* MuchAdo.epub */,
-				5BF98F7223009E1C00F9BF4C /* AllWell.epub */,
-				5BF98F7323009E1C00F9BF4C /* VeniceMerchant.epub */,
-				5BF98F7423009E1C00F9BF4C /* Hamlet.epub */,
+				5BF98F7123009E1C00F9BF4C /* Much Ado About Nothing.epub */,
+				5BF98F7223009E1C00F9BF4C /* All's Well That Ends Well.epub */,
+				5BF98F7323009E1C00F9BF4C /* The Merchant of Venice.epub */,
+				5BF98F7423009E1C00F9BF4C /* Hamlet, Prince of Denmark.epub */,
 				5BF98F7523009E1C00F9BF4C /* Macbeth.epub */,
 			);
 			path = Books;
+			sourceTree = "<group>";
+		};
+		5BF98F832300B0F200F9BF4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F812300AA0500F9BF4C /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BF98F842300B0FD00F9BF4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F7B2300A03F00F9BF4C /* BookNameCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BF98F852300B11700F9BF4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF98F6E230099BC00F9BF4C /* BookListViewController.swift */,
+				5BF98F7D2300A56F00F9BF4C /* BookDetailViewController.swift */,
+				5BF98F7F2300A81D00F9BF4C /* eReaderFolioReaderContainer.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		806489FE8FC2C251C732BFF2 /* Frameworks */ = {
@@ -179,13 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF98F642300999300F9BF4C /* LaunchScreen.storyboard in Resources */,
-				5BF98F7823009E1C00F9BF4C /* VeniceMerchant.epub in Resources */,
+				5BF98F7823009E1C00F9BF4C /* The Merchant of Venice.epub in Resources */,
 				5BF98F7A23009E1C00F9BF4C /* Macbeth.epub in Resources */,
 				5BF98F612300999300F9BF4C /* Assets.xcassets in Resources */,
 				5BF98F5F2300999200F9BF4C /* Main.storyboard in Resources */,
-				5BF98F7623009E1C00F9BF4C /* MuchAdo.epub in Resources */,
-				5BF98F7923009E1C00F9BF4C /* Hamlet.epub in Resources */,
-				5BF98F7723009E1C00F9BF4C /* AllWell.epub in Resources */,
+				5BF98F7623009E1C00F9BF4C /* Much Ado About Nothing.epub in Resources */,
+				5BF98F7923009E1C00F9BF4C /* Hamlet, Prince of Denmark.epub in Resources */,
+				5BF98F7723009E1C00F9BF4C /* All's Well That Ends Well.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF98F6F230099BC00F9BF4C /* BookListViewController.swift in Sources */,
+				5BF98F7C2300A03F00F9BF4C /* BookNameCell.swift in Sources */,
+				5BF98F822300AA0500F9BF4C /* Book.swift in Sources */,
 				5BF98F672300999300F9BF4C /* main.m in Sources */,
+				5BF98F802300A81D00F9BF4C /* eReaderFolioReaderContainer.swift in Sources */,
 				5BF98F592300999200F9BF4C /* AppDelegate.m in Sources */,
+				5BF98F7E2300A56F00F9BF4C /* BookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

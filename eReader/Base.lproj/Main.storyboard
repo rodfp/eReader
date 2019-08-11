@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRs-K8-6vf">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,19 +10,121 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Book List View Controller-->
+        <!--Select a book-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BookListViewController" customModule="eReader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-Tf-hUx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="bookTableViewCell" rowHeight="60" id="KOM-U7-Xpu" customClass="BookNameCell" customModule="eReader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KOM-U7-Xpu" id="UOI-iK-iyP">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ja-oD-cPu">
+                                                    <rect key="frame" x="10" y="19" width="356" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Ja-oD-cPu" firstAttribute="leading" secondItem="UOI-iK-iyP" secondAttribute="leading" constant="10" id="dvb-H5-nb2"/>
+                                                <constraint firstItem="5Ja-oD-cPu" firstAttribute="centerY" secondItem="UOI-iK-iyP" secondAttribute="centerY" id="ePO-rT-URl"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Ja-oD-cPu" secondAttribute="trailing" constant="10" id="o2H-fU-0Fr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookNameLabel" destination="5Ja-oD-cPu" id="yav-ru-ksq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dcY-Tf-hUx" secondAttribute="bottom" id="O60-89-Upc"/>
+                            <constraint firstItem="dcY-Tf-hUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VtM-Vh-Po7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcY-Tf-hUx" secondAttribute="trailing" id="Zbl-GC-6dA"/>
+                            <constraint firstItem="dcY-Tf-hUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oW3-KF-f9c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Select a book" id="6WW-Y3-KGf"/>
+                    <connections>
+                        <outlet property="tableView" destination="dcY-Tf-hUx" id="9Vi-bQ-kdD"/>
+                        <segue destination="Ols-i8-smS" kind="show" identifier="bookDetail" id="7uU-sk-oCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1533" y="37"/>
+        </scene>
+        <!--Book Detail View Controller-->
+        <scene sceneID="ucl-3Q-lM6">
+            <objects>
+                <viewController id="Ols-i8-smS" customClass="BookDetailViewController" customModule="eReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1m-3R-iEI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4JT-5O-B00">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <connections>
+                                    <segue destination="eQz-0f-YYe" kind="embed" id="Fjp-2d-GSO"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4JT-5O-B00" firstAttribute="leading" secondItem="Wga-gn-TVX" secondAttribute="leading" id="Pnx-81-0Jf"/>
+                            <constraint firstItem="Wga-gn-TVX" firstAttribute="bottom" secondItem="4JT-5O-B00" secondAttribute="bottom" constant="60" id="Wtw-9p-Uqi"/>
+                            <constraint firstItem="4JT-5O-B00" firstAttribute="top" secondItem="Wga-gn-TVX" secondAttribute="top" id="foO-7c-OAc"/>
+                            <constraint firstItem="Wga-gn-TVX" firstAttribute="trailing" secondItem="4JT-5O-B00" secondAttribute="trailing" id="nOf-Fk-qVA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wga-gn-TVX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fz6-fE-YoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344.9275362318845" y="36.830357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rig-5h-B9C">
+            <objects>
+                <navigationController id="CRs-K8-6vf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ys1-jh-x46">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="T5m-EK-SCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bh7-27-64T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Reader Folio Reader Container-->
+        <scene sceneID="Vg5-XA-IPQ">
+            <objects>
+                <viewController id="eQz-0f-YYe" customClass="eReaderFolioReaderContainer" customModule="eReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQ3-g3-o2F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="714"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAx-Om-cti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="37"/>
         </scene>
     </scenes>
 </document>
