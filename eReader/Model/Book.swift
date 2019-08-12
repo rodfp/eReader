@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Book : String {
+enum Book : String, CaseIterable {
   case muchAdoAboutNothing = "Much Ado About Nothing"
   case allWellThatEndsWell = "All's Well That Ends Well"
   case merchantOfVenice = "The Merchant of Venice"
@@ -18,9 +18,5 @@ enum Book : String {
     let filePath = Bundle.main.path(forResource: self.rawValue, ofType: "epub")
     return filePath
   }
-  
-  static func allValues() -> [Book]{
-    return [.muchAdoAboutNothing,.allWellThatEndsWell,.merchantOfVenice,.hamlet,.macbeth]
-  }
-  
+    
 }

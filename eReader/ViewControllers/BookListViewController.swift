@@ -30,7 +30,7 @@ class BookListViewController : UIViewController {
 extension BookListViewController : UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let books = Book.allValues()
+    let books = Book.allCases
     MixpanelHelper.userStartedReadingBook(books[indexPath.row])
     self.performSegue(withIdentifier: "bookDetail", sender: books[indexPath.row])
   }
@@ -40,14 +40,14 @@ extension BookListViewController : UITableViewDelegate, UITableViewDataSource {
       else {
         return UITableViewCell()
     }
-    let books = Book.allValues()
+    let books = Book.allCases
     let bookName = books[indexPath.row].rawValue
     cell.setupCell(bookName: bookName)
     return cell
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return Book.allValues().count
+    return Book.allCases.count
   }
   
 }
